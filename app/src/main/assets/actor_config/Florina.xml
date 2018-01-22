@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Actor>
+    <!--基本信息-->
+    <ACTOR_KEY></ACTOR_KEY><!--角色标识-->
+    <CAREER_KEY>PegasusKnight</CAREER_KEY><!--职业标识，英文字母-->
+    <XY>10,5</XY><!--坐标，以坐上角格子为0,0-->
+    <PARTY>0</PARTY><!--阵营，0我军，1敌军，2友军，3未知-->
+    <NAME>芙罗莉娜</NAME>
+    <INFO>伊利亚见习天马骑士 和琳是旧知</INFO>
+    <FACE>Florina.png</FACE><!--头像，不写则使用职业头像-->
+
+    <!--角色能力修正，负数为降低，正数为提高，不写和0为不变-->
+    <ADJUST_LEVEL></ADJUST_LEVEL><!--等级-->
+    <ADJUST_MAXHP>3</ADJUST_MAXHP><!--最大HP-->
+    <ADJUST_STR>1</ADJUST_STR><!--力量-->
+    <ADJUST_MAG>5</ADJUST_MAG><!--魔力-->
+    <ADJUST_SKILL>2</ADJUST_SKILL><!--技术-->
+    <ADJUST_SPD>4</ADJUST_SPD><!--速度-->
+    <ADJUST_LUCK>7</ADJUST_LUCK><!--幸运-->
+    <ADJUST_DEF>1</ADJUST_DEF><!--守备-->
+    <ADJUST_RES>2</ADJUST_RES><!--魔防-->
+    <ADJUST_MOVE></ADJUST_MOVE><!--移动-->
+    <ADJUST_CON>-1</ADJUST_CON><!--体格-->
+    <ADJUST_AFFIN>6</ADJUST_AFFIN><!--直接指定属性，不写和0无，1"炎"，2"雷"，3"风"，4"冰"，5"暗"，6"光",，"理"-->
+    <ADJUST_MOUNT>2</ADJUST_MOUNT><!--直接指定坐骑，不写和0无，1马，2天马，3飞龙-->
+
+    <!--角色成长率，写数字，不写则使用职业成长率-->
+    <GROW_MAXHP>60</GROW_MAXHP><!--HP成长-->
+    <GROW_STR>40</GROW_STR><!--力量成长-->
+    <GROW_MAG>45</GROW_MAG><!--魔力成长-->
+    <GROW_SKILL>50</GROW_SKILL><!--技术成长-->
+    <GROW_SPD>55</GROW_SPD><!--速度成长-->
+    <GROW_LUCK>50</GROW_LUCK><!--幸运成长-->
+    <GROW_DEF>15</GROW_DEF><!--守备成长-->
+    <GROW_RES>35</GROW_RES><!--魔防成长-->
+
+    <!--武器熟练度，写数字，不写则使用职业武器熟练度-->
+    <EXP_SWORD></EXP_SWORD>
+    <EXP_LANCE>31</EXP_LANCE>
+    <EXP_AXE></EXP_AXE>
+    <EXP_BOW></EXP_BOW>
+    <EXP_STAFF></EXP_STAFF>
+    <EXP_ANIMA></EXP_ANIMA>
+    <EXP_LIGHT></EXP_LIGHT>
+    <EXP_DARK></EXP_DARK>
+</Actor>

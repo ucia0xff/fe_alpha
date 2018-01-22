@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Career>
+    <!--基本信息-->
+    <CAREER_KEY>PegasusKnight</CAREER_KEY>
+    <NAME>天马骑士</NAME>
+    <INFO>驾驭飞马翱翔在天空的骑士 对魔法有耐性，对弓弱 装备『枪』</INFO>
+    <FACE>Unknow.png</FACE><!--头像-->
+
+    <!--移动消耗-->
+    <MOVE_COST>8</MOVE_COST>
+
+    <!--初始能力-->
+    <INIT_LEVEL>1</INIT_LEVEL>
+    <INIT_MAXHP>14</INIT_MAXHP>
+    <INIT_STR>4</INIT_STR>
+    <INIT_MAG>0</INIT_MAG>
+    <INIT_SKILL>5</INIT_SKILL>
+    <INIT_SPD>5</INIT_SPD>
+    <INIT_LUCK>0</INIT_LUCK>
+    <INIT_DEF>3</INIT_DEF>
+    <INIT_RES>2</INIT_RES>
+    <INIT_MOVE>7</INIT_MOVE>
+    <INIT_CON>5</INIT_CON>
+    <INIT_AFFIN>0</INIT_AFFIN><!--属性，0是没有-->
+    <INIT_MOUNT>2</INIT_MOUNT><!--坐骑，0是没有-->
+
+    <!--最大能力-->
+    <MAX_LEVEL>20</MAX_LEVEL>
+    <MAX_MAXHP>60</MAX_MAXHP>
+    <MAX_STR>20</MAX_STR>
+    <MAX_MAG>20</MAX_MAG>
+    <MAX_SKILL>20</MAX_SKILL>
+    <MAX_SPD>20</MAX_SPD>
+    <MAX_LUCK>30</MAX_LUCK>
+    <MAX_DEF>20</MAX_DEF>
+    <MAX_RES>20</MAX_RES>
+    <MAX_MOVE>15</MAX_MOVE>
+    <MAX_CON>20</MAX_CON>
+
+    <!--职业通用成长率-->
+    <GROW_MAXHP>65</GROW_MAXHP><!--HP成长-->
+    <GROW_STR>35</GROW_STR><!--力量成长-->
+    <GROW_MAG>40</GROW_MAG><!--魔力成长-->
+    <GROW_SKILL>40</GROW_SKILL><!--技术成长-->
+    <GROW_SPD>40</GROW_SPD><!--速度成长-->
+    <GROW_LUCK>35</GROW_LUCK><!--幸运成长-->
+    <GROW_DEF>12</GROW_DEF><!--守备成长-->
+    <GROW_RES>35</GROW_RES><!--魔防成长-->
+
+    <!--初始武器熟练度-->
+    <EXP_SWORD>0</EXP_SWORD>
+    <EXP_LANCE>31</EXP_LANCE>
+    <EXP_AXE>0</EXP_AXE>
+    <EXP_BOW>0</EXP_BOW>
+    <EXP_STAFF>0</EXP_STAFF>
+    <EXP_ANIMA>0</EXP_ANIMA>
+    <EXP_LIGHT>0</EXP_LIGHT>
+    <EXP_DARK>0</EXP_DARK>
+
+    <!--最大武器熟练度-->
+    <MAX_EXP_SWORD>0</MAX_EXP_SWORD>
+    <MAX_EXP_LANCE>181</MAX_EXP_LANCE>
+    <MAX_EXP_AXE>0</MAX_EXP_AXE>
+    <MAX_EXP_BOW>0</MAX_EXP_BOW>
+    <MAX_EXP_STAFF>0</MAX_EXP_STAFF>
+    <MAX_EXP_ANIMA>0</MAX_EXP_ANIMA>
+    <MAX_EXP_LIGHT>0</MAX_EXP_LIGHT>
+    <MAX_EXP_DARK>0</MAX_EXP_DARK>
+
+</Career>

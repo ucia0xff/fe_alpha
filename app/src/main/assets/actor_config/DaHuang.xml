@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Actor>
+    <!--基本信息-->
+    <ACTOR_KEY></ACTOR_KEY><!--角色标识-->
+    <CAREER_KEY>Sister</CAREER_KEY><!--职业标识-->
+    <XY>9,6</XY><!--坐标-->
+    <PARTY>0</PARTY><!--阵营-->
+    <NAME>大黄</NAME><!--角色名-->
+    <INFO>萌萌哒大黄狗 用狗牙攻击敌人</INFO><!--角色说明-->
+    <FACE>DaHuang.png</FACE><!--头像-->
+
+    <!--角色能力修正-->
+    <ADJUST_LEVEL></ADJUST_LEVEL><!--等级-->
+    <ADJUST_MAXHP>2</ADJUST_MAXHP><!--最大HP-->
+    <ADJUST_STR>1</ADJUST_STR><!--力量-->
+    <ADJUST_MAG></ADJUST_MAG><!--魔力-->
+    <ADJUST_SKILL>1</ADJUST_SKILL><!--技术-->
+    <ADJUST_SPD>1</ADJUST_SPD><!--速度-->
+    <ADJUST_LUCK>3</ADJUST_LUCK><!--幸运-->
+    <ADJUST_DEF>1</ADJUST_DEF><!--守备-->
+    <ADJUST_RES></ADJUST_RES><!--魔防-->
+    <ADJUST_MOVE></ADJUST_MOVE><!--移动-->
+    <ADJUST_CON>1</ADJUST_CON><!--体格-->
+    <ADJUST_AFFIN>1</ADJUST_AFFIN><!--属性-->
+    <ADJUST_MOUNT></ADJUST_MOUNT><!--坐骑-->
+
+    <!--角色成长率-->
+    <GROW_MAXHP>70</GROW_MAXHP><!--HP成长-->
+    <GROW_STR>35</GROW_STR><!--力量成长-->
+    <GROW_MAG>10</GROW_MAG><!--魔力成长-->
+    <GROW_SKILL>45</GROW_SKILL><!--技术成长-->
+    <GROW_SPD>45</GROW_SPD><!--速度成长-->
+    <GROW_LUCK>30</GROW_LUCK><!--幸运成长-->
+    <GROW_DEF>15</GROW_DEF><!--守备成长-->
+    <GROW_RES>20</GROW_RES><!--魔防成长-->
+
+    <!--武器熟练度-->
+    <EXP_SWORD></EXP_SWORD>
+    <EXP_LANCE></EXP_LANCE>
+    <EXP_AXE></EXP_AXE>
+    <EXP_BOW></EXP_BOW>
+    <EXP_STAFF></EXP_STAFF>
+    <EXP_ANIMA></EXP_ANIMA>
+    <EXP_LIGHT></EXP_LIGHT>
+    <EXP_DARK></EXP_DARK>
+</Actor>

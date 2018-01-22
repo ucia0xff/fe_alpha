@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Career>
+    <!--基本信息-->
+    <CAREER_KEY>Sister</CAREER_KEY>
+    <NAME>修女</NAME>
+    <INFO>使用圣杖救助我方的女性 装备『杖』</INFO>
+    <FACE>Unknow.png</FACE><!--头像-->
+
+    <!--移动消耗-->
+    <MOVE_COST>9</MOVE_COST>
+
+    <!--初始能力-->
+    <INIT_LEVEL>1</INIT_LEVEL>
+    <INIT_MAXHP>16</INIT_MAXHP>
+    <INIT_STR>0</INIT_STR>
+    <INIT_MAG>1</INIT_MAG>
+    <INIT_SKILL>2</INIT_SKILL>
+    <INIT_SPD>2</INIT_SPD>
+    <INIT_LUCK>0</INIT_LUCK>
+    <INIT_DEF>0</INIT_DEF>
+    <INIT_RES>6</INIT_RES>
+    <INIT_MOVE>5</INIT_MOVE>
+    <INIT_CON>4</INIT_CON>
+    <INIT_AFFIN>0</INIT_AFFIN><!--属性，0是没有-->
+    <INIT_MOUNT>0</INIT_MOUNT><!--坐骑，0是没有-->
+
+    <!--最大能力-->
+    <MAX_LEVEL>20</MAX_LEVEL>
+    <MAX_MAXHP>60</MAX_MAXHP>
+    <MAX_STR>20</MAX_STR>
+    <MAX_MAG>20</MAX_MAG>
+    <MAX_SKILL>20</MAX_SKILL>
+    <MAX_SPD>20</MAX_SPD>
+    <MAX_LUCK>30</MAX_LUCK>
+    <MAX_DEF>20</MAX_DEF>
+    <MAX_RES>20</MAX_RES>
+    <MAX_MOVE>15</MAX_MOVE>
+    <MAX_CON>20</MAX_CON>
+
+    <!--职业通用成长率-->
+    <GROW_MAXHP>50</GROW_MAXHP><!--HP成长-->
+    <GROW_STR>10</GROW_STR><!--力量成长-->
+    <GROW_MAG>30</GROW_MAG><!--魔力成长-->
+    <GROW_SKILL>35</GROW_SKILL><!--技术成长-->
+    <GROW_SPD>32</GROW_SPD><!--速度成长-->
+    <GROW_LUCK>45</GROW_LUCK><!--幸运成长-->
+    <GROW_DEF>8</GROW_DEF><!--守备成长-->
+    <GROW_RES>50</GROW_RES><!--魔防成长-->
+
+    <!--初始武器熟练度-->
+    <EXP_SWORD>0</EXP_SWORD>
+    <EXP_LANCE>0</EXP_LANCE>
+    <EXP_AXE>0</EXP_AXE>
+    <EXP_BOW>0</EXP_BOW>
+    <EXP_STAFF>31</EXP_STAFF>
+    <EXP_ANIMA>0</EXP_ANIMA>
+    <EXP_LIGHT>0</EXP_LIGHT>
+    <EXP_DARK>0</EXP_DARK>
+
+    <!--最大武器熟练度-->
+    <MAX_EXP_SWORD>0</MAX_EXP_SWORD>
+    <MAX_EXP_LANCE>0</MAX_EXP_LANCE>
+    <MAX_EXP_AXE>0</MAX_EXP_AXE>
+    <MAX_EXP_BOW>0</MAX_EXP_BOW>
+    <MAX_EXP_STAFF>181</MAX_EXP_STAFF>
+    <MAX_EXP_ANIMA>0</MAX_EXP_ANIMA>
+    <MAX_EXP_LIGHT>0</MAX_EXP_LIGHT>
+    <MAX_EXP_DARK>0</MAX_EXP_DARK>
+
+</Career>

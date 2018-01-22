@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Actor>
+    <!--基本信息-->
+    <ACTOR_KEY>Natasha</ACTOR_KEY>
+    <CAREER_KEY>Sister</CAREER_KEY><!--职业-->
+    <XY>10,7</XY><!--坐标-->
+    <PARTY>0</PARTY><!--阵营-->
+    <NAME>娜塔莎</NAME><!--名称-->
+    <INFO>古拉德帝国出身的修女，认真贤淑的美丽女性</INFO><!--说明-->
+    <FACE>Natasha.png</FACE><!--头像-->
+
+    <!--角色能力修正-->
+    <ADJUST_LEVEL></ADJUST_LEVEL><!--等级-->
+    <ADJUST_MAXHP>2</ADJUST_MAXHP><!--最大HP-->
+    <ADJUST_STR></ADJUST_STR><!--力量-->
+    <ADJUST_MAG>1</ADJUST_MAG><!--魔力-->
+    <ADJUST_SKILL>2</ADJUST_SKILL><!--技术-->
+    <ADJUST_SPD>6</ADJUST_SPD><!--速度-->
+    <ADJUST_LUCK>6</ADJUST_LUCK><!--幸运-->
+    <ADJUST_DEF>2</ADJUST_DEF><!--守备-->
+    <ADJUST_RES></ADJUST_RES><!--魔防-->
+    <ADJUST_MOVE></ADJUST_MOVE><!--移动-->
+    <ADJUST_CON>0</ADJUST_CON><!--体格-->
+    <ADJUST_AFFIN>4</ADJUST_AFFIN><!--属性-->
+    <ADJUST_MOUNT></ADJUST_MOUNT><!--坐骑-->
+
+    <!--角色成长率-->
+    <GROW_MAXHP>40</GROW_MAXHP><!--HP成长-->
+    <GROW_STR>10</GROW_STR><!--力量成长-->
+    <GROW_MAG>35</GROW_MAG><!--魔力成长-->
+    <GROW_SKILL>40</GROW_SKILL><!--技术成长-->
+    <GROW_SPD>45</GROW_SPD><!--速度成长-->
+    <GROW_LUCK>75</GROW_LUCK><!--幸运成长-->
+    <GROW_DEF>15</GROW_DEF><!--守备成长-->
+    <GROW_RES>60</GROW_RES><!--魔防成长-->
+
+    <!--武器熟练度-->
+    <EXP_SWORD></EXP_SWORD>
+    <EXP_LANCE></EXP_LANCE>
+    <EXP_AXE></EXP_AXE>
+    <EXP_BOW></EXP_BOW>
+    <EXP_STAFF>31</EXP_STAFF>
+    <EXP_ANIMA></EXP_ANIMA>
+    <EXP_LIGHT></EXP_LIGHT>
+    <EXP_DARK></EXP_DARK>
+</Actor>

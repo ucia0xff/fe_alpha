@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Career>
+    <!--############此为职业模版，根据需要改写############-->
+
+    <!--基本信息-->
+    <CAREER_KEY>XXXX</CAREER_KEY><!--职业标识-->
+    <NAME>职业名</NAME>
+    <INFO>职业信息</INFO>
+    <FACE>XXXX.png</FACE><!--头像-->
+
+    <!--移动消耗-->
+    <MOVE_COST>0</MOVE_COST><!--移动类型-->
+    <!--0下位步兵系-->
+    <!--1上位步兵系-->
+    <!--2下位骑兵系-->
+    <!--3上位骑兵系-->
+    <!--4下位弓骑系-->
+    <!--5上位弓骑系-->
+    <!--6重甲系-->
+    <!--7贼系-->
+    <!--8飞行系-->
+    <!--9魔法系-->
+    <!--10战士系-->
+    <!--11山系-->
+    <!--12海系-->
+    <!--13狂战士系-->
+    <!--14魔王&远古火龙&冰龙&神龙&火龙&魔龙-->
+    <!--15其他非战斗单位-->
+    <!--16弩车-->
+
+    <!--初始能力-->
+    <INIT_LEVEL>0</INIT_LEVEL>
+    <INIT_MAXHP>0</INIT_MAXHP>
+    <INIT_STR>0</INIT_STR>
+    <INIT_MAG>0</INIT_MAG>
+    <INIT_SKILL>0</INIT_SKILL>
+    <INIT_SPD>0</INIT_SPD>
+    <INIT_LUCK>0</INIT_LUCK>
+    <INIT_DEF>0</INIT_DEF>
+    <INIT_RES>0</INIT_RES>
+    <INIT_MOVE>0</INIT_MOVE>
+    <INIT_CON>0</INIT_CON>
+    <INIT_AFFIN>0</INIT_AFFIN><!--属性，不写和0"——"，1"炎"，2"雷"，3"风"，4"冰"，5"暗"，6"光",，"理"-->
+    <INIT_MOUNT>0</INIT_MOUNT><!--坐骑，不写和0"——"，1"马"，2"天马"，3"飞龙"-->
+
+    <!--最大能力-->
+    <MAX_LEVEL>0</MAX_LEVEL>
+    <MAX_MAXHP>0</MAX_MAXHP>
+    <MAX_STR>0</MAX_STR>
+    <MAX_MAG>0</MAX_MAG>
+    <MAX_SKILL>0</MAX_SKILL>
+    <MAX_SPD>0</MAX_SPD>
+    <MAX_LUCK>0</MAX_LUCK>
+    <MAX_DEF>0</MAX_DEF>
+    <MAX_RES>0</MAX_RES>
+    <MAX_MOVE>0</MAX_MOVE>
+    <MAX_CON>0</MAX_CON>
+
+    <!--成长率-->
+    <GROW_MAXHP>0</GROW_MAXHP><!--HP成长-->
+    <GROW_STR>0</GROW_STR><!--力量成长-->
+    <GROW_MAG>0</GROW_MAG><!--魔力成长-->
+    <GROW_SKILL>0</GROW_SKILL><!--技术成长-->
+    <GROW_SPD>0</GROW_SPD><!--速度成长-->
+    <GROW_LUCK>0</GROW_LUCK><!--幸运成长-->
+    <GROW_DEF>0</GROW_DEF><!--守备成长-->
+    <GROW_RES>0</GROW_RES><!--魔防成长-->
+
+    <!--初始武器熟练度-->
+    <EXP_SWORD>0</EXP_SWORD>
+    <EXP_LANCE>0</EXP_LANCE>
+    <EXP_AXE>0</EXP_AXE>
+    <EXP_BOW>0</EXP_BOW>
+    <EXP_STAFF>0</EXP_STAFF>
+    <EXP_ANIMA>0</EXP_ANIMA>
+    <EXP_LIGHT>0</EXP_LIGHT>
+    <EXP_DARK>0</EXP_DARK>
+
+    <!--最大武器熟练度-->
+    <MAX_EXP_SWORD>0</MAX_EXP_SWORD>
+    <MAX_EXP_LANCE>0</MAX_EXP_LANCE>
+    <MAX_EXP_AXE>0</MAX_EXP_AXE>
+    <MAX_EXP_BOW>0</MAX_EXP_BOW>
+    <MAX_EXP_STAFF>0</MAX_EXP_STAFF>
+    <MAX_EXP_ANIMA>0</MAX_EXP_ANIMA>
+    <MAX_EXP_LIGHT>0</MAX_EXP_LIGHT>
+    <MAX_EXP_DARK>0</MAX_EXP_DARK>
+
+</Career>
