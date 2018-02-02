@@ -35,7 +35,7 @@ public class CursorAnim extends Animation {
         dst.offsetTo(x - Values.MAP_TILE_WIDTH / 2, y - Values.MAP_TILE_HEIGHT);
 
         if (!isEnd) {
-            Canvas.drawBitmap(frameBitmaps[nowFrame], src, dst, paint);
+            Canvas.drawBitmap(frames[nowFrame], src, dst, paint);
             long time = System.currentTimeMillis();
             if (time - lastTime > durations[nowFrame]) {
                 nowFrame++;
@@ -59,7 +59,7 @@ public class CursorAnim extends Animation {
 
         if (!isEnd) {
             if (canvas==null) return;
-            canvas.drawBitmap(frameBitmaps[nowFrame], src, dst, paint);
+            canvas.drawBitmap(frames[nowFrame], src, dst, paint);
             long time = System.currentTimeMillis();
             if (time - lastTime > durations[nowFrame]) {
                 nowFrame++;

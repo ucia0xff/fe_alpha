@@ -49,7 +49,7 @@ public class MapAnim extends Animation {
             dst.offsetTo(x - Values.MAP_TILE_WIDTH / 2, y - Values.MAP_TILE_HEIGHT);
 
         if (!isEnd) {
-            Canvas.drawBitmap(frameBitmaps[nowFrame], src, dst, paint);
+            Canvas.drawBitmap(frames[nowFrame], src, dst, paint);
             long time = System.currentTimeMillis();
             if (time - lastTime > durations[nowFrame]) {
                 nowFrame++;
@@ -78,7 +78,7 @@ public class MapAnim extends Animation {
             dst.offsetTo(xyTile[0] * Values.MAP_TILE_WIDTH - Values.MAP_TILE_WIDTH / 2 + offsetX, xyTile[1] * Values.MAP_TILE_HEIGHT - Values.MAP_TILE_HEIGHT + offsetY);
 
         if (!isEnd) {
-            Canvas.drawBitmap(frameBitmaps[nowFrame], src, dst, paint);
+            Canvas.drawBitmap(frames[nowFrame], src, dst, paint);
             long time = System.currentTimeMillis();
             if (time - lastTime > durations[nowFrame]) {
                 nowFrame++;

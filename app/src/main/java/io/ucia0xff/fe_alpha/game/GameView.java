@@ -87,14 +87,10 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback, Vie
         paint = new Paint();
         paint.setTextSize(80);
         paint.setColor(Color.WHITE);
-        actors = new Actor[6];
+        actors = new Actor[2];
         try {
             actors[0] = new Actor(context, "Natasha");
-            actors[1] = new Actor(context, "DaHuang");
-            actors[2] = new Actor(context, "MautheDog");
-            actors[3] = new Actor(context, "Florina");
-            actors[4] = new Actor(context, "Priscilla");
-            actors[5] = new Actor(context, "Walter");
+            actors[1] = new Actor(context, "Priscilla");
 
             map = new Map(context, "map1");
         } catch (Exception e) {
@@ -141,7 +137,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback, Vie
                 DrawActors(canvas, paint, mapOffsetScreenX, mapOffsetScreenY);
                 DisplayActorOptions(selectedActor);
                 break;
-            case Values.CASE_BEFORE_ATTACK:
+            case Values.CASE_BEFORE_ACT:
                 break;
             case Values.CASE_SHOW_ACTOR_INFO:
                 actorInfoPanel.DisplayActorInfo(canvas, paint, selectedActor);
@@ -346,8 +342,8 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback, Vie
             case Values.CASE_BEFORE_MOVE:
             case Values.CASE_MOVING:
             case Values.CASE_AFTER_MOVE:
-            case Values.CASE_BEFORE_ATTACK:
-            case Values.CASE_SELECT_WEAPON:
+            case Values.CASE_BEFORE_ACT:
+            case Values.CASE_SELECT_ITEM:
                 if (mapOffsetScreenX - (int) distanceX + map.getMapWidth() <= Values.SCREEN_WIDTH)//最右
                     mapOffsetScreenX = -(map.getMapWidth() - Values.SCREEN_WIDTH);
                 else if (mapOffsetScreenX - (int) distanceX >= 0)//最左

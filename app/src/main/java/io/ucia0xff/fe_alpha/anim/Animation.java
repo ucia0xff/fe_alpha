@@ -23,7 +23,7 @@ public abstract class Animation {
     public int frameCount = 0;
 
     //动画的每一帧
-    public Bitmap[] frameBitmaps = null;
+    public Bitmap[] frames = null;
 
     //每一帧的宽高
     public int frameWidth = 0;
@@ -52,28 +52,33 @@ public abstract class Animation {
         this.durations = durations;
     }
 
+    //获取一帧
+    public Bitmap getFrame(int frameId){
+        return frames[frameId];
+    }
+
     // 构造方法
     public Animation(){}
     public Animation(Context context, int[] resId, boolean isLoop) {
         frameCount = resId.length;
-        frameBitmaps = new Bitmap[frameCount];
+        frames = new Bitmap[frameCount];
         durations = new int[frameCount];
         setDurations(defaultDuration);
         for (int i = 0; i < frameCount; i++) {
-            frameBitmaps[i] = ReadBitMap(context, resId[i]);
+            frames[i] = ReadBitMap(context, resId[i]);
         }
         this.isLoop = isLoop;
     }
-    public Animation(Bitmap[] frameBitmaps, boolean isLoop) {
-        frameCount = frameBitmaps.length;
+    public Animation(Bitmap[] frames, boolean isLoop) {
+        frameCount = frames.length;
         durations = new int[frameCount];
         Arrays.fill(durations, defaultDuration);
-        this.frameBitmaps = frameBitmaps;
+        this.frames = frames;
         this.isLoop = isLoop;
     }
 
     //绘制动画中的其中一帧
-    public abstract void DrawFrame(Canvas canvas, Paint paint, int x, int y, int frameID);
+    public abstract void DrawFrame(Canvas canvas, Paint paint, int x, int y, int frameId);
 
     //在指定位置绘制动画
     public abstract void DrawAnim(Canvas Canvas, Paint paint, int x, int y);
@@ -86,16 +91,12 @@ public abstract class Animation {
     public static Bitmap ReadBitMap(Context context, int resId) {
         BitmapFactory.Options opt = new BitmapFactory.Options();
         opt.inPreferredConfig = Bitmap.Config.RGB_565;
-        opt.inPurgeable = true;
-        opt.inInputShareable = true;
         InputStream is = context.getResources().openRawResource(resId);
         return BitmapFactory.decodeStream(is, null, opt);
     }
     public static Bitmap ReadBitMap(Context context, String fileName) throws IOException {
         BitmapFactory.Options opt = new BitmapFactory.Options();
         opt.inPreferredConfig = Bitmap.Config.RGB_565;//色彩模式，RGB_565模式下一个像素点占用2bytes(R占5bit,G占6bit,B占5bit)
-        opt.inPurgeable = true;// 可被释放
-        opt.inInputShareable = true;//可被共享，和上一个参数一起用
         InputStream is = context.getAssets().open(fileName);
         return BitmapFactory.decodeStream(is, null, opt);
     }
@@ -119,11 +120,35 @@ public abstract class Animation {
         return mirrors;
     }
 
-    //获取一帧
-    public Bitmap getFramesBitmap(){
-        return frameBitmaps[0];
+    //将图片转为黑白
+    public static Bitmap convertToBlackWhite(Bitmap bmp) {
+        int width = bmp.getWidth(); // 获取位图的宽
+        int height = bmp.getHeight(); // 获取位图的高
+        int[] pixels = new int[width * height]; // 通过位图的大小创建像素点数组
+
+        bmp.getPixels(pixels, 0, width, 0, 0, width, height);
+        int alpha = 0xFF << 24;
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                int grey = pixels[width * i + j];
+
+                //分离三原色
+                int red = ((grey & 0x00FF0000) >> 16);
+                int green = ((grey & 0x0000FF00) >> 8);
+                int blue = (grey & 0x000000FF);
+
+                //转化成灰度像素
+                grey = (int) (red * 0.3 + green * 0.59 + blue * 0.11);
+                grey = alpha | (grey << 16) | (grey << 8) | grey;
+                pixels[width * i + j] = grey;
+            }
+        }
+        //新建图片
+        Bitmap newBmp = Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565);
+        //设置图片数据
+        newBmp.setPixels(pixels, 0, width, 0, 0, width, height);
+
+        return newBmp;
     }
-    public Bitmap getFrame(int frameId){
-        return frameBitmaps[frameId];
-    }
+
 }

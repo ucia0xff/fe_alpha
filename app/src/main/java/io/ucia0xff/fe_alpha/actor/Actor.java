@@ -140,7 +140,7 @@ public class Actor {
                         case Values.PARTY_ALLY:
                             mapAnimKey += "_Ally_";
                             break;
-                        case Values.PARTY_UNKNOW:
+                        case Values.PARTY_UNKNOWN:
                             mapAnimKey += "_Unknow_";
                             break;
                     }
